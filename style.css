@@ -1,0 +1,14 @@
+.space { 
+    margin-top: 100px;
+}
+.spaceContent { 
+    margin-top: 250px;
+}
+
+
+.testing { 
+    background-color: red;
+}
+.spaceAround { 
+    justify-content: space-around;
+}
