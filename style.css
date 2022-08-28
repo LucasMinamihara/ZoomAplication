@@ -1,26 +1,102 @@
-.space { 
-    margin-top: 100px;
+/* Importing font lato from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* Reseting default margin on browser */
+
+/* Somo colors to use on my project */
+/* Main color: #0c4a6e */
+/* Font color: #262626 */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-.spaceContent { 
-    margin-top: 250px;
+body {
+  font-family: "Lato", sans-serif;
+  background: linear-gradient(0.25turn, #22d3ee, #67e8f9, #a5f3fc);
+  color: #262626;
+}
+.container {
+  position: relative;
+  width: 1200px;
+  height: 50vh;
+  margin: auto;
+}
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.animatedText {
+  text-align: center;
+  animation: animatedText 3s;
+  text-transform: uppercase;
+}
+section {
+}
+@keyframes animatedText {
+  0% {
+    opacity: 0;
+    transform: translate(-200px);
+  }
+  80% {
+    transform: translate(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-
-.testing { 
-    background-color: red;
+/* Selection Part */
+.selectionPart {
+  position: relative;
+  height: 100%;
+  height: 100vh;
 }
-.spaceAround { 
-    justify-content: space-around;
+.icon1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.4s;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  animation: animatedIcon 4s;
 }
-.calculator { 
-    transition-duration: 1s;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(204, 204, 84);
+.icon1:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
-.nothing { 
-    display: none;
+.icon2 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.4s;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+  position: absolute;
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  animation: animatedIcon 4s;
 }
-
-.loginScreen { 
-    margin: 150px 150px 0px 150px}
+.icon2:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+@keyframes animatedIcon {
+  0% {
+    transform: translate(-60%, -60%);
+    opacity: 0;
+  }
+  80% {
+    transform: translate(-70%, -70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}

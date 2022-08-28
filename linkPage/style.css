@@ -1,0 +1,63 @@
+/* Importing font lato from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+/* Reseting default settings */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+svg {
+  height: 24px;
+  width: 24px;
+}
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  font-size: 16px;
+  gap: 40px;
+  margin: 100px;
+}
+.tuesday {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  transition-duration: 1s;
+}
+.tuesday:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.saturday {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  transition-duration: 1s;
+}
+.saturday:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.preaching {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  transition-duration: 1s;
+}
+.preaching:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+.allWidth {
+  width: 100%;
+  background-color: #94a3b8;
+  padding: 40px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+h2 {
+  margin-bottom: 40px;
+}
+.moreInformation {
+  margin: 100px;
+  line-height: 1.7;
+}
